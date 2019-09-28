@@ -218,12 +218,25 @@ figure:hover figcaption {
 
 
 /* Mobile Styles */
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+}
+@media only screen and (max-width: 980px) {
+    .container {
+        max-width: 680px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
     body {
         font-size: 17px;
     }
     header h1 {
-        font-size: 20px;
+        font-size: 24px;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -232,7 +245,10 @@ figure:hover figcaption {
         padding: 0 10px;
     }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 640px) {
+    .container {
+        max-width: 380px;
+    }
     body {
         font-size: 16px;
     }
@@ -244,12 +260,21 @@ figure:hover figcaption {
     header {
         height: auto;
     }
+    header .container {
+        max-width: 100%;
+        padding: 0;
+    }
     header h1 {
         height: auto;
+        width: 100%;
+        margin: 0;
+        justify-content: center;
     }
     header nav {
         float: none;
         clear: left;
         height: auto;
+        width: 100%;
+        justify-content: center;
     }
 }
